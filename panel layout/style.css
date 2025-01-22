@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Forum&family=Playwrite+VN:wght@100..400&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite VN", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.panels {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.panel {
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-size: 20px;
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    transition: flex 0.7s ease-in-out;
+}
+
+.panel > * {
+    width: 100%;
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+
+.panel.open {
+    font-size: 40px;
+    flex: 5;
+}
+
+.panel > *:first-child {
+    transform: translateY(-100%);
+}
+
+.panel.open > *:first-child {
+    transform: translateY(0);
+}
+
+.panel > *:last-child {
+    transform: translateY(100%);
+}
+
+.panel.open > *:last-child {
+    transform: translateY(0);
+}
+
+.panel1 { background-image: url(https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); }
+.panel2 { background-image: url(https://i.pinimg.com/236x/45/e9/24/45e9248c0ccd8b121a76aeff8a326e79.jpg); }
+.panel3 { background-image: url(https://i.pinimg.com/474x/bf/3d/a4/bf3da45b0079db89ccf34e1c5255c4b0.jpg); }
+.panel4 { background-image: url(https://i.pinimg.com/236x/f1/c5/be/f1c5be554c1a30f197e6a7d43ac99212.jpg); }
+.panel5 { background-image: url(https://i.pinimg.com/474x/6b/37/9b/6b379bbc075111aa52bf6f06f1bfc0ed.jpg); }
